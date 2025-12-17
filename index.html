@@ -29,7 +29,7 @@
   </section>
 
   <!-- SERVICES -->
-  <section class="services">
+  <section class="services fade-in">
     <h2>Our Services</h2>
 
     <div class="service-grid">
@@ -43,7 +43,7 @@
   </section>
 
   <!-- WORK -->
-  <section class="work">
+  <section class="work fade-in">
   <h2>Our Work</h2>
 
   <div class="work-grid">
@@ -76,7 +76,7 @@
 
 
   <!-- CTA -->
-  <section class="cta">
+  <section class="cta fade-in">
     <h2>Let’s Grow Your Brand</h2>
     <a href="contact.html" class="btn primary">Get a Quote</a>
   </section>
@@ -88,6 +88,19 @@
   >
     💬
   </a>
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  document.querySelectorAll(".fade-in").forEach(el => {
+    observer.observe(el);
+  });
+</script>
 
 </body>
 </html>

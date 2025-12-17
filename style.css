@@ -143,3 +143,40 @@ p {
 .work-card:hover img {
   transform: scale(1.1);
 }
+
+/* Scroll animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  margin: 12px 0;
+  padding: 14px;
+  background: #161616;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.contact-container textarea {
+  min-height: 120px;
+  resize: none;
+}
