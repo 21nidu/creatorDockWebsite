@@ -180,3 +180,8 @@ p {
   min-height: 120px;
   resize: none;
 }
+
+.logo {
+  width: 140px;
+  margin-bottom: 20px;
+}
