@@ -192,13 +192,16 @@ p {
 }
 
 .logo {
-  width: 140px;
-  margin-bottom: 20px;
+  width: 260px;          /* bigger & brand-forward */
+  max-width: 85%;
+  margin-bottom: 30px;
 }
 
 .tagline {
-  font-size: 1.1rem;
-  opacity: 0.9;
-  margin-bottom: 30px;
+  font-size: 1.4rem;     /* increased for impact */
+  line-height: 1.6;
+  opacity: 0.95;
+  margin-bottom: 40px;
 }
+
 
